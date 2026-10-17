@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Amol Rajendra Barde - Java Developer, Backend and Full Stack Enthusiast">
+
+    <title>Amol Rajendra Barde | Java Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         LOADER
+    ========================== -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-inner">
+
+            <div class="loader-name">
+                AMOL<span>.BARDE</span>
+            </div>
+
+            <div class="loader-top">
+
+                <span>
+                    AMOL.DEV / BOOTING
+                </span>
+
+                <strong id="loaderPercent">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="loader-track">
+
+                <div class="loader-bar">
+
+                    <span id="loaderProgress"></span>
+
+                </div>
+
+            </div>
+
+            <div class="loader-code"
+                 id="loaderCode">
+
+                INITIALIZING PORTFOLIO...
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         CURSOR GLOW
+    ========================== -->
+
+    <div id="cursorGlow"
+         class="cursor-glow">
+    </div>
+
+
+    <!-- =========================
+         BACKGROUND VIDEO
+    ========================== -->
+
+    <video id="mediaBg"
+           class="media-bg"
+           autoplay
+           muted
+           loop
+           playsinline
+           preload="metadata">
+
+        <source src="assets/videos/background.mp4"
+                type="video/mp4">
+
+    </video>
+
+    <div class="media-shade"></div>
+
+
+    <!-- =========================
+         LIVE CANVAS
+    ========================== -->
+
+    <canvas id="liveBg"
+            class="live-bg">
+    </canvas>
+
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+
+    <div class="grid-bg"></div>
+
+    <div class="glow"></div>
+
+    <div class="glow two"></div>
+
+    <span class="particle p1"></span>
+    <span class="particle p2"></span>
+    <span class="particle p3"></span>
+
+
+    <!-- =========================
+         LAMP INTRO
+    ========================== -->
+
+    <section id="lampStage"
+             class="lamp-stage">
+
+        <div class="lamp-room"></div>
+
+        <div class="lamp-floor"></div>
+
+
+        <div id="lampScene"
+             class="lamp-scene"
+             tabindex="0"
+             role="button"
+             aria-label="Turn lamp on">
+
+            <div class="lamp-shade"></div>
+
+            <div class="lamp-bulb"></div>
+
+            <div class="lamp-neck"></div>
+
+            <div class="lamp-base"></div>
+
+            <button id="lampSwitch"
+                    class="lamp-switch"
+                    type="button"
+                    aria-label="Turn on lamp">
+
+                ON
+
+            </button>
+
+        </div>
+
+
+        <div class="lamp-hint">
+
+            <span>CLICK THE LAMP</span>
+
+            <small>
+                Explore the hidden side
+            </small>
+
+        </div>
+
+
+        <!-- Hidden message -->
+
+        <div id="lampMessage"
+             class="lamp-message">
+
+            <div class="message-box">
+
+                <div class="message-code">
+
+                    // SYSTEM MESSAGE
+                    <span>ACCESS GRANTED</span>
+
+                </div>
+
+                <h2>
+
+                    Welcome,
+                    <span>Developer.</span>
+
+                </h2>
+
+                <p>
+
+                    You found my workspace.
+                    Let's explore my projects,
+                    skills and journey.
+
+                </p>
+
+                <button id="enterPortfolio"
+                        class="enter-btn"
+                        type="button">
+
+                    ENTER PORTFOLIO
+                    <span>→</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header id="navbar"
+            class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home"
+               class="logo">
+
+                <span>AB</span>
+
+                <strong>
+                    AMOL
+                </strong>
+
+            </a>
+
+
+            <nav id="navLinks"
+                 class="nav-links">
+
+                <a href="#home"
+                   class="active">
+
+                    Home
+
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#education">
+                    Education
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button id="themeBtn"
+                        class="theme-btn"
+                        type="button"
+                        aria-label="Toggle theme">
+
+                    ☀
+
+                </button>
+
+                <button id="hamb"
+                        class="hamb"
+                        type="button"
+                        aria-label="Open menu">
+
+                    ☰
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section id="home"
+                 class="hero section">
+
+            <div class="hero-content">
+
+                <div class="hero-tag reveal">
+
+                    <span></span>
+
+                    AVAILABLE FOR OPPORTUNITIES
+
+                </div>
+
+
+                <p class="hero-small reveal">
+
+                    HELLO, I'M
+
+                </p>
+
+
+                <h1 class="reveal">
+
+                    Amol Rajendra
+
+                    <span>Barde</span>
+
+                </h1>
+
+
+                <h2 class="hero-role reveal">
+
+                    Java Developer |
+                    Backend & Full Stack Enthusiast
+
+                </h2>
+
+
+                <p class="hero-description reveal">
+
+                    MSc Computer Science student at SPPU
+                    focused on Java backend development,
+                    databases and modern web applications.
+
+                </p>
+
+
+                <div class="typing-wrapper reveal">
+
+                    <span>
+                        I build
+                    </span>
+
+                    <span id="typing"></span>
+
+                </div>
+
+
+                <div class="hero-buttons reveal">
+
+                    <a href="#projects"
+                       class="btn primary">
+
+                        VIEW PROJECTS
+
+                    </a>
+
+                    <a href="assets/docs/Resume_A.pdf"
+                       class="btn secondary"
+                       download>
+
+                        DOWNLOAD RESUME
+
+                    </a>
+
+                </div>
+
+
+                <div class="social-links reveal">
+
+                    <a href="https://github.com/Amolbarde"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        GitHub ↗
+
+                    </a>
+
+                    <a href="https://linkedin.com/in/amol-barde-6650b836"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        LinkedIn ↗
+
+                    </a>
+
+                    <a href="mailto:bamol4055@gmail.com">
+
+                        Email ↗
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <div class="hero-profile reveal">
+
+                <div class="profile-ring">
+
+                    <div class="profile-inner">
+                        AB
+                    </div>
+
+                    <span class="orbit orbit-one">
+                        JAVA / SQL
+                    </span>
+
+                    <span class="orbit orbit-two">
+                        BACKEND
+                    </span>
+
+                </div>
+
+                <div class="profile-label">
+
+                    JAVA
+                    <br>
+                    DEVELOPER
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section id="about"
+                 class="section content-section">
+
+            <div class="section-heading reveal">
+
+                <span>
+                    01 / ABOUT
+                </span>
+
+                <h2>
+
+                    Building with
+                    <strong>logic.</strong>
+
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <p>
+
+                        I am an MSc Computer Science student
+                        at Savitribai Phule Pune University
+                        with a strong interest in Java backend
+                        and full-stack development.
+
+                    </p>
+
+                    <p>
+
+                        I enjoy creating practical applications
+                        using Java, JDBC, PostgreSQL, Servlets,
+                        HTML, CSS and JavaScript.
+
+                    </p>
+
+                    <p>
+
+                        My goal is to become a professional
+                        Java developer and build reliable,
+                        scalable and user-friendly software.
+
+                    </p>
+
+                </div>
+
+
+                <div class="about-card reveal">
+
+                    <div>
+
+                        <span>
+                            LOCATION
+                        </span>
+
+                        <strong>
+                            Pune, Maharashtra
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            EDUCATION
+                        </span>
+
+                        <strong>
+                            MSc Computer Science
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            FOCUS
+                        </span>
+
+                        <strong>
+                            Java Backend
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EDUCATION
+        ========================== -->
+
+        <section id="education"
+                 class="section content-section">
+
+            <div class="section-heading reveal">
+
+                <span>
+                    02 / EDUCATION
+                </span>
+
+                <h2>
+
+                    Academic
+                    <strong>journey.</strong>
+
+                </h2>
+
+            </div>
+
+
+            <div id="timeline"
+                 class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            2025 — PRESENT
+                        </span>
+
+                        <h3>
+                            MSc Computer Science
+                        </h3>
+
+                        <p>
+                            Savitribai Phule Pune University
+                        </p>
+
+                        <small>
+                            Currently pursuing
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            2022 — 2025
+                        </span>
+
+                        <h3>
+                            BSc Computer Science
+                        </h3>
+
+                        <p>
+                            R.B.N.B. College, Shrirampur
+                        </p>
+
+                        <small>
+                            73%
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section id="skills"
+                 class="section content-section">
+
+            <div class="section-heading reveal">
+
+                <span>
+                    03 / SKILLS
+                </span>
+
+                <h2>
+
+                    Technical
+                    <strong>stack.</strong>
+
+                </h2>
+
+            </div>
+
+
+            <div class="skill-filters reveal">
+
+                <button class="filter-btn active"
+                        data-filter="all">
+
+                    ALL
+
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="java">
+
+                    JAVA
+
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="web">
+
+                    WEB
+
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="database">
+
+                    DATABASE
+
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="frameworks">
+
+                    FRAMEWORKS
+
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="tools">
+
+                    TOOLS
+
+                </button>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card reveal"
+                     data-cat="java">
+
+                    <span>01</span>
+
+                    <h3>
+                        Core Java
+                    </h3>
+
+                    <p>
+                        OOP, Collections,
+                        Exception Handling
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="java">
+
+                    <span>02</span>
+
+                    <h3>
+                        Advanced Java
+                    </h3>
+
+                    <p>
+                        Servlets, JDBC,
+                        Web Applications
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="java">
+
+                    <span>03</span>
+
+                    <h3>
+                        Swing / AWT
+                    </h3>
+
+                    <p>
+                        Desktop GUI Applications
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="web">
+
+                    <span>04</span>
+
+                    <h3>
+                        HTML / CSS
+                    </h3>
+
+                    <p>
+                        Responsive Web Interfaces
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="web">
+
+                    <span>05</span>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Interactive Web Applications
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="database">
+
+                    <span>06</span>
+
+                    <h3>
+                        PostgreSQL
+                    </h3>
+
+                    <p>
+                        SQL, Joins, Constraints,
+                        Queries
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="database">
+
+                    <span>07</span>
+
+                    <h3>
+                        JDBC
+                    </h3>
+
+                    <p>
+                        Java Database Connectivity
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="frameworks">
+
+                    <span>08</span>
+
+                    <h3>
+                        Spring
+                    </h3>
+
+                    <p>
+                        Backend Framework
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="frameworks">
+
+                    <span>09</span>
+
+                    <h3>
+                        Hibernate
+                    </h3>
+
+                    <p>
+                        ORM and Database Mapping
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal"
+                     data-cat="tools">
+
+                    <span>10</span>
+
+                    <h3>
+                        Git / GitHub
+                    </h3>
+
+                    <p>
+                        Version Control
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section id="projects"
+                 class="section content-section">
+
+            <div class="section-heading reveal">
+
+                <span>
+                    04 / PROJECTS
+                </span>
+
+                <h2>
+
+                    Things I have
+                    <strong>built.</strong>
+
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- SMART COMPLAINT -->
+
+                <article class="project-card featured reveal">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-status ongoing">
+                        IN DEVELOPMENT
+                    </div>
+
+                    <h3>
+                        Smart Complaint
+                        Management System
+                    </h3>
+
+                    <p>
+
+                        Smart complaint platform with
+                        automatic priority detection,
+                        department routing and pattern
+                        detection.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Java</span>
+                        <span>Servlets</span>
+                        <span>PostgreSQL</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <button class="project-btn"
+                            data-project="smart">
+
+                        VIEW PROJECT
+
+                    </button>
+
+                </article>
+
+
+                <!-- CLINIC -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-status completed">
+                        COMPLETED
+                    </div>
+
+                    <h3>
+                        Clinic Management System
+                    </h3>
+
+                    <p>
+
+                        Desktop clinic management
+                        application for handling patients,
+                        doctors and appointments.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Java</span>
+                        <span>Swing</span>
+                        <span>JDBC</span>
+                        <span>PostgreSQL</span>
+
+                    </div>
+
+                    <button class="project-btn"
+                            data-project="clinic">
+
+                        VIEW PROJECT
+
+                    </button>
+
+                </article>
+
+
+                <!-- USER MANAGEMENT -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-status completed">
+                        COMPLETED
+                    </div>
+
+                    <h3>
+                        Java Swing User Management
+                    </h3>
+
+                    <p>
+
+                        Desktop user management system
+                        developed using Java Swing, AWT
+                        and JDBC.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Java</span>
+                        <span>Swing</span>
+                        <span>AWT</span>
+                        <span>JDBC</span>
+
+                    </div>
+
+                    <button class="project-btn"
+                            data-project="users">
+
+                        VIEW PROJECT
+
+                    </button>
+
+                </article>
+
+
+                <!-- ATM -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <div class="project-status completed">
+                        COMPLETED
+                    </div>
+
+                    <h3>
+                        ATM Simulation System
+                    </h3>
+
+                    <p>
+
+                        Console-based ATM simulation
+                        demonstrating Java OOP concepts
+                        and transaction operations.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Java</span>
+                        <span>OOP</span>
+
+                    </div>
+
+                    <button class="project-btn"
+                            data-project="atm">
+
+                        VIEW PROJECT
+
+                    </button>
+
+                </article>
+
+
+                <!-- CALCULATOR -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-number">
+                        05
+                    </div>
+
+                    <div class="project-status completed">
+                        COMPLETED
+                    </div>
+
+                    <h3>
+                        Web-Based Calculator
+                    </h3>
+
+                    <p>
+
+                        Responsive calculator built with
+                        HTML, CSS and JavaScript.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <button class="project-btn"
+                            data-project="calculator">
+
+                        VIEW PROJECT
+
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact"
+                 class="section content-section contact-section">
+
+            <div class="section-heading reveal">
+
+                <span>
+                    05 / CONTACT
+                </span>
+
+                <h2>
+
+                    Let's build
+                    <strong>something.</strong>
+
+                </h2>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-intro reveal">
+
+                    <p>
+
+                        Interested in working together,
+                        discussing a project or simply
+                        connecting?
+
+                    </p>
+
+                    <a href="mailto:bamol4055@gmail.com"
+                       class="contact-email">
+
+                        bamol4055@gmail.com
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-details reveal">
+
+                    <a href="mailto:bamol4055@gmail.com">
+
+                        <span>EMAIL</span>
+
+                        bamol4055@gmail.com
+
+                    </a>
+
+
+                    <a href="tel:+919021359528">
+
+                        <span>PHONE</span>
+
+                        +91 90213 59528
+
+                    </a>
+
+
+                    <a href="https://github.com/Amolbarde"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <span>GITHUB</span>
+
+                        github.com/Amolbarde
+
+                    </a>
+
+
+                    <a href="https://linkedin.com/in/amol-barde-6650b836"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <span>LINKEDIN</span>
+
+                        linkedin.com/in/amol-barde-6650b836
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PROJECT MODAL
+    ========================== -->
+
+    <div id="modal"
+         class="modal">
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-box">
+
+            <button id="closeModal"
+                    class="modal-close"
+                    type="button">
+
+                ×
+
+            </button>
+
+            <div class="modal-number">
+                PROJECT DETAILS
+            </div>
+
+            <h2 id="modalTitle">
+                Project
+            </h2>
+
+            <p id="modalText">
+                Project information.
+            </p>
+
+            <div id="modalTech"
+                 class="modal-tech">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div>
+            © 2026 Amol Rajendra Barde
+        </div>
+
+        <div>
+            JAVA • BACKEND • FULL STACK
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/script.js"
+            defer>
+    </script>
+
+</body>
+
+</html>
